@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #c5c0b2;
+  overflow: hidden;
+}
+.header {
+  position: fixed;
+  background-color: #111;
+  height: 15vh;
+  width: 30%;
+}
+.link-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-items li {
+  padding-top: 30px;
+  padding-left: 25px;
+  list-style: none;
+}
+.link-items li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Zen Loop";
+  color: #c5c0b2;
+}
+.link-items li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 20vh;
+    width: 55%;
+    position: fixed;
+  }
+  .link-items li {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  .link-items li a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    height: 20vh;
+    width: 55%;
+    position: fixed;
+  }
+  .link-items li {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  .link-items li a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 20vh;
+    width: 55%;
+    position: fixed;
+  }
+  .link-items li {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  .link-items li a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    height: 15vh;
+    width: 70%;
+    position: fixed;
+  }
+  .link-items li {
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+  .link-items li a {
+    font-size: 30px;
+  }
+}
+/* 2 */
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  text-align: left;
+}
+.content h1 {
+  font-family: "Zen Loop";
+  font-weight: 800;
+  font-size: 40px;
+  color: #333;
+}
+.content p {
+  margin-top: 60px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-family: "Zen Loop";
+  font-size: 35px;
+}
+::selection {
+  color: #000;
+  background: #444;
+}
+/*  */
+.container-item {
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .container-item {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 700px) {
+  .container-item {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .container-item {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 400px) {
+  .container-item {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+.container-items {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item {
+  position: relative;
+  flex-grow: 1;
+  font-family: "Zen Loop";
+  font-size: 80px;
+  transition: all 300ms ease-in-out;
+}
+
+.item:hover {
+  flex-grow: 4;
+  font-size: 120px;
+}
+
+@media (max-width: 900px) {
+  .item {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .item {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .item {
+    margin-bottom: 80px;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.container-img-wrap {
+  position: absolute;
+  top: -60rem;
+  left: -80px;
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.container-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .container-items {
+    height: 100px;
+  }
+  .item {
+    font-size: 20px;
+  }
+  .item:hover {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+  .container-img-wrap {
+    display: none;
+  }
+}
+footer {
+  background-color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9vh;
+}
+.txt {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zen Loop";
+  font-size: 22px;
+  color: whitesmoke;
+}
